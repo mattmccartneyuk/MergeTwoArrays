@@ -34,14 +34,24 @@ def main(array1, array2):
                 occurrence_tracker[f"{current_number}"] = "1"
         current_array = array2
 
+    """
+    *******************************************************
+    ** Iterates through each entity in {occurrence_tracker},
+    ** thereby string formatting based on the number of
+    ** occurrences held as a value.
+    *******************************************************
+    """
     mergeList = []
     for x in range(len(occurrence_tracker)):
+        # Retrives the key/value pair based on the array index.
         key = list(occurrence_tracker.keys())[x]
         value = list(occurrence_tracker.values())[x]
 
+        # String formatting.
         string = (key + ", ") * int(value)
         string = string[:-2]
 
+        # .extend creates a single one-dimensional array, as opposed to .append which is multi-dimensional.  
         mergeList.extend(string.split(','))
     
     return mergeList
