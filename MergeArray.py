@@ -7,7 +7,6 @@ def main(array1, array2):
     ** to {occurrence_tracker}, followed by {array2}. This
     ** loop only operates twice.
     *******************************************************
-
     """
     current_array = array1
     for y in range(2):
