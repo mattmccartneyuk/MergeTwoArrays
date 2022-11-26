@@ -14,10 +14,21 @@ def main(array1, array2):
                 number = current_array[i]
                 occurrence_tracker[f"{number}"] = "1"
         current_array = array2
-    print(occurrence_tracker)
+
+    mergeList = []
+    for x in range(len(occurrence_tracker)):
+        key = list(occurrence_tracker.keys())[x]
+        value = list(occurrence_tracker.values())[x]
+
+        string = (key + ", ") * int(value)
+        string = string[:-2]
+
+        mergeList.extend(string.split(','))
+    
+    print(mergeList)
+
 if __name__ == "__main__":
     a1 = [1, 1, 2, 2, 3]
     a2 = [1, 2, 3, 4, 5, 6] 
     # return 1, 1, 1, 2, 2, 2, 3, 3, 4, 5, 6
     main(a1, a2)
-    .
