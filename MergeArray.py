@@ -18,4 +18,5 @@ def main(array1, array2):
 if __name__ == "__main__":
     a1 = [1, 1, 2, 2, 3]
     a2 = [1, 2, 3, 4, 5, 6] 
-    # return 1, 1, 1, 2, 2, 2, 3, 3, 4, 5, 6 main(a1, a2)
+    # return 1, 1, 1, 2, 2, 2, 3, 3, 4, 5, 6
+    main(a1, a2)
